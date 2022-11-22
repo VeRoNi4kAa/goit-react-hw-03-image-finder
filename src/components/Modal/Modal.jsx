@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import PropTypes from 'prop-types';
+
 import { Overlay, ModalWindow } from './Modal.styled';
 
 class Modal extends Component {
