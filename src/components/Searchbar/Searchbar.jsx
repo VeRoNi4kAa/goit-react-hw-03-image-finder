@@ -14,19 +14,19 @@ class SearchBar extends Component {
     value: '',
   };
 
-  // Отвечает за обновление состояния
+
   handleChange = e => {
     this.setState({ value: e.target.value.toLowerCase() });
   };
 
-  // Вызывается при отправке формы
+
   handleSubmit = evt => {
     evt.preventDefault();
     if (this.state.value.trim() === '') {
       alert('Введите данные для поиска');
       return;
     }
-    // Проп который передается форме для вызова при сабмите
+
     this.props.onSubmit({ ...this.state });
   };
 

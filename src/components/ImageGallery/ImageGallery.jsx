@@ -5,7 +5,7 @@ import ImageGalleryItem from '../ImageGalleryItem';
 const ImageGallery = ({ images, onClick }) => {
   return (
     <ImageGalleryList>
-      {images !== '' &&
+      {!!images &&
         images.map(image => {
           return (
             <ImageGalleryItem

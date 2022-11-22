@@ -69,7 +69,7 @@ class App extends Component {
     return (
       <div className="App">
         <SearchBar onSubmit={value => addToState(value)} />
-        {images.length === 0 && stateMashine === 'loaded' ? (
+        {!!images.length && stateMashine === 'loaded' ? (
           <p className="error">not found</p>
         ) : (
           <ImageGallery images={images} onClick={addLargeImg} />
